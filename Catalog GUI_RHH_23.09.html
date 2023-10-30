@@ -1,0 +1,417 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3HVSVBHXFN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3HVSVBHXFN');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <!--<script>
+//Reload Page every 5 minutes
+
+    function autoRefresh() {
+        window.location = window.location.href;
+    }
+    setInterval('autoRefresh()', 300000);
+	
+</script>-->
+<style>
+* {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  text-align: right;
+  font-size: 1.4em;
+  line-height: 1.1em;  
+} 
+
+//Background Animation 
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-color: #084d69;
+}
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+ background-image: linear-gradient(7deg, #1d7698 70%, #084d69 70%);  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:9s;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateY(-15%);
+  }
+  100% {
+    transform:translateY(15%);
+  }
+}
+
+
+//#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 1920px;
+  min-height: 1080px;
+  z-index: -5;
+}
+
+.resourceCard {
+  display: block;
+  background-color: white;
+  width: 190px;
+  height: 225px;
+  padding-top: 1px;
+  border-radius: 15px;
+  margin-top: 20px;
+  filter: drop-shadow(5px 5px 6px #444);
+}
+
+.resourceCardLink {
+    text-decoration: none;
+}
+
+.resourceCardImage {
+  display: block;
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.resourceRow {
+  float: left;
+  margin-left: 20px; 
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.resourceCardDescription {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  padding-top: 5px;
+  line: 20px;
+}
+
+.resourceIcons {
+  margin-left: 440px;
+  margin-top: 225px;
+}
+
+.resourceCard:hover {
+  background-color: 'blue';
+}
+
+//Clock
+body {
+    font-family: "Muli", sans-serif;
+    font-weight: 200;
+}
+.time {
+    color: black !important;
+    padding: 8px;
+    text-align: right;
+    width: 400px;
+    line-height: .75em;
+    margin: 0px 35px 25px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	font-weight: 200;
+}
+.hms {
+    font-size: 36pt;
+    font-weight: 400;
+}
+.ampm {
+    font-size: 16pt;
+	font-weight: 300;
+}
+.date {
+    font-size: 24pt;
+	font-weight: 300;
+}
+
+.surveyButton {
+	float: left;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	z-index: 4;
+	border-radius: 15px;
+	background-color: white;
+	padding: 15px;
+}
+
+#surveyIcon, #surveyText {
+line-height:  25px;
+}
+
+#surveyIcon {
+vertical-align: middle; 
+padding-bottom: 5px; 
+padding-right: 5px;
+
+}
+
+
+/*** Layout For Portrait Desktop Mode ***/
+@media (max-width: 1082px) {
+	.libraryLogo {
+		display: none;
+	}
+	
+	.resourceIcons {
+		margin-left: 105px;
+		margin-top: 550px;
+		z-index: 7;
+	}
+}
+
+</style>
+
+</head>
+  
+<body> 
+<!--Experience Survey-->
+<a class="" href="https://www.surveymonkey.com/r/8VYBT8C" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=600`); return false;">
+	<div class="surveyButton"> 
+		<i style="color: #084d69; vertical-align: middle;" id="surveyIcon" class="fas fa-thumbs-up fa-lg"></i>
+		<span style="color: #084d69; font-size: 22px;" id="surveyText">How was your Experience?</span>
+	</div>	
+</a>
+
+
+<!--Background Animation-->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+<!--Row 1-->
+<div class="resourceIcons">
+  <div class="resourceRow">
+    
+     <a href="https://mckinney.aspendiscovery.org" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	 <div class="resourceCard">
+     <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/Catalog.png?raw=true">
+     <p class="resourceCardDescription">Browse Catalog</p>
+     </div></a>
+    
+
+    
+	 
+      <a href="https://mckinneykidscat.aspendiscovery.org/?browseCategory=mckinney_jnf" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	  <div class="resourceCard">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/KidsCatalog.png?raw=true">
+      <p class="resourceCardDescription">Kid's Catalog</p>
+      </div></a>
+    
+
+	
+	
+  </div>
+
+<!--Row 2-->
+  <div class="resourceRow">
+    
+      <a href="https://mckinney.aspendiscovery.org/MyAccount/SelfReg" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	  <div class="resourceCard">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/Register.png?raw=true">
+      <p class="resourceCardDescription">Register for a Card</p>
+      </div></a>
+  
+
+  
+
+      <a href="https://ipac.mckinneytexas.org/eventsall" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	  <div class="resourceCard">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/Events.png?raw=true">
+      <p class="resourceCardDescription">Calendar of Events</p>
+      </div></a>
+    	
+	
+</div>
+
+ <!--Row 3--> 
+  <div class="resourceRow">
+    
+      <a href="https://texasgroup.worldcat.org/" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	  <div class="resourceCard">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/ILL.png?raw=true">
+      <p class="resourceCardDescription">Interlibrary Loan</p>
+      </div></a>
+    
+
+  
+  
+      <a href="https://mckinneytexas.beanstack.com/reader365" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	  <div class="resourceCard">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/Beanstack.png?raw=true">
+      <p class="resourceCardDescription">Beanstack</p>
+      </div></a>
+    
+ </div> 
+  
+  
+	
+</div>
+
+<!---Row 4-->
+<div class="resourceRow">
+    
+      <a href="https://ipac.mckinneytexas.org/roomsrhh" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	  <div class="resourceCard">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/StudyRoom.png?raw=true">
+      <p class="resourceCardDescription">Book a Study Room</p>
+      </div></a>
+      
+	
+	
+      <a href="https://mckinney.voly.org/index.html" onclick="window.open(this.href,'targetWindow',`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
+ return false;" class="resourceCardLink">
+	  <div class="resourceCard">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/CatalogGUI/Volunteer.png?raw=true">
+      <p class="resourceCardDescription">Volunteer</p>
+      </div></a>
+    
+	
+
+ </div>
+</div>
+
+
+<div class="time">
+        <span class="hms"></span>
+        <span class="ampm"></span>
+        <br>
+        <span class="date"></span>
+</div>
+
+  <script>
+  function updateTime() {
+  var dateInfo = new Date();
+
+  /* time */
+  var hr,
+    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+    sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
+    ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
+
+  // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
+  if (dateInfo.getHours() == 0) {
+    hr = 12;
+  } else if (dateInfo.getHours() > 12) {
+    hr = dateInfo.getHours() - 12;
+  } else {
+    hr = dateInfo.getHours();
+  }
+
+  var currentTime = hr + ":" + _min + ":" + sec;
+
+  // print time
+  document.getElementsByClassName("hms")[0].innerHTML = currentTime;
+  document.getElementsByClassName("ampm")[0].innerHTML = ampm;
+
+  /* date */
+  var dow = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    month = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    day = dateInfo.getDate();
+
+  // store date
+  var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
+
+  document.getElementsByClassName("date")[0].innerHTML = currentDate;
+};
+
+// print time and date once, then update them every second
+updateTime();
+setInterval(function() {
+  updateTime()
+}, 1000);
+
+//Open in Popup -- Front and Back Nav 
+function newPopup(url) {
+    popupWindow = window.open(
+        url,'popUpWindow','height=1000,width=1850,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+
+
+//Refresh Entire Page after __ Sec Idle 
+var time = new Date().getTime();
+$(document.body).bind("mousemove keypress", function () {
+    time = new Date().getTime();
+});
+
+setInterval(function() {
+    if (new Date().getTime() - time >= 60000) {
+        window.location.reload(true);
+    }
+}, 1000);
+
+
+  </script>  
+
+  
+</body>
+</html>
