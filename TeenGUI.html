@@ -1,0 +1,355 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JLG9D9');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PW0GDDLFV2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PW0GDDLFV2');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+
+
+<style>
+* {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  text-align: right;
+  font-size: 1.4em;
+  line-height: 1.1em;  
+} 
+
+//Background Animation 
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-color: #C724B1;
+}
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+ background-image: linear-gradient(7deg, #da78f0 70%, #C724B1 70%);  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:9s;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateY(-15%);
+  }
+  100% {
+    transform:translateY(15%);
+  }
+}
+
+
+//#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 1920px;
+  min-height: 1080px;
+  z-index: -5;
+}
+
+.resourceCard {
+  display: block;
+  background-color: white;
+  width: 165px;
+  height: 200px;
+  padding-top: 1px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.resourceCardLink {
+    text-decoration: none;
+}
+
+.resourceCardImage {
+  display: block;
+  width: 125px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.resourceRow {
+  float: left;
+  margin-left: 20px; 
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.resourceCardDescription {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.resourceIcons {
+  margin-left: 25px;
+}
+
+.resourceCard:hover {
+  background-color: 'blue';
+}
+
+//Clock
+body {
+    font-family: "Muli", sans-serif;
+    font-weight: 200;
+}
+.time {
+    color: #fff;
+    padding: 8px;
+    text-align: right;
+    width: 400px;
+    line-height: .75em;
+    margin: 0px 35px 25px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	font-weight: 300;
+}
+.hms {
+    font-size: 36pt;
+    font-weight: 400;
+}
+.ampm {
+    font-size: 16pt;
+	font-weight: 300;
+}
+.date {
+    font-size: 24pt;
+	font-weight: 300;
+}
+}</style>
+
+</head>
+  
+<body> 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3K4CXN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--Background Animation-->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<!--Row 1-->
+<div class="resourceIcons">
+  <div class="resourceRow">
+    <div class="resourceCard">
+     <a href=JavaScript:newPopup("https://quickdraw.withgoogle.com/") class="resourceCardLink">
+     <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/Teen%20GUI/Quick,%20Draw.png?raw=true">
+     <p class="resourceCardDescription">Quick, Draw</p>
+     </a>
+    </div>
+
+    <div class="resourceCard">
+      <a href=JavaScript:newPopup("https://hourofcode.com/us/learn") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/KidsGUI/Hour%20of%20Code.png?raw=true">
+      <p class="resourceCardDescription">Hour of Code</p>
+      </a>
+    </div>
+
+    <div class="resourceCard">
+      <a href=JavaScript:newPopup("https://play2048.co/") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/Teen%20GUI/2048.png?raw=true">
+      <p class="resourceCardDescription">2048</p>
+      </a>
+    </div>
+	
+  </div>
+
+<!--Row 2-->
+  <div class="resourceRow">
+    <div class="resourceCard">
+      <a href=JavaScript:newPopup("https://melvoridle.com/") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/Teen%20GUI/Melvor%20Idle.png?raw=true">
+      <p class="resourceCardDescription">Melvor Idle</p>
+      </a>
+  </div>
+
+    <div class="resourceCard">
+      <a href=JavaScript:newPopup("https://www.codingame.com/start") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/Teen%20GUI/Codin%20Game.png?raw=true">
+      <p class="resourceCardDescription">CodinGame</p>
+      </a>
+    </div>
+
+    
+	<div class="resourceCard">
+      <a href=JavaScript:newPopup("https://scratch.mit.edu/") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/KidsGUI/Scratch.png?raw=true">
+      <p class="resourceCardDescription">Scratch</p>
+      </a>
+    </div>
+  </div>
+
+ <!--Row 3--> 
+  <div class="resourceRow">
+    <div class="resourceCard">
+      <a href=JavaScript:newPopup("https://www.poptropica.com/haxe/play/") class="resourceCardLink" >
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/Teen%20GUI/poptropica.png?raw=true">
+      <p class="resourceCardDescription">Poptropica</p>
+      </a>
+    </div>
+
+
+	<div class="resourceCard">
+      <a href=JavaScript:newPopup("https://amongusplay.online/") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/Teen%20GUI/Among%20Us.png?raw=true">
+      <p class="resourceCardDescription">Among Us</p>
+      </a>
+    </div>
+  
+
+  
+	<div class="resourceCard">
+      <a href=JavaScript:newPopup("https://classic.minecraft.net/") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/Teen%20GUI/Minecraft%20Classic.png?raw=true">
+      <p class="resourceCardDescription">Classic Minecraft</p>
+      </a>
+    </div>
+</div>
+  
+<!--Row 4 -->
+ <div class="resourceRow">
+	<div class="resourceCard">
+      <a href=JavaScript:newPopup("https://www.lego.com/en-us/kids/games") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/KidsGUI/lego.png?raw=true">
+      <p class="resourceCardDescription">Lego</p>
+      </a>
+    </div>
+	<div class="resourceCard">
+      <a href=JavaScript:newPopup("https://www.roblox.com/") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/KidsGUI/Roblox.png?raw=true">
+      <p class="resourceCardDescription">Roblox</p>
+      </a>
+    </div>
+	<div class="resourceCard">
+      <a href=JavaScript:newPopup("https://mckinneykidscat.aspendiscovery.org") class="resourceCardLink">
+      <img class="resourceCardImage" src="https://github.com/mckinneylibrary/images/blob/master/KidsGUI/KidsCatalog.png?raw=true">
+      <p class="resourceCardDescription">MPLS Catalog</p>
+      </a>
+    </div>
+  
+  </div> 
+</div>
+
+<div class="time">
+        <span class="hms"></span>
+        <span class="ampm"></span>
+        <br>
+        <span class="date"></span>
+</div>
+
+  <script>
+  function updateTime() {
+  var dateInfo = new Date();
+
+  /* time */
+  var hr,
+    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+    sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
+    ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
+
+  // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
+  if (dateInfo.getHours() == 0) {
+    hr = 12;
+  } else if (dateInfo.getHours() > 12) {
+    hr = dateInfo.getHours() - 12;
+  } else {
+    hr = dateInfo.getHours();
+  }
+
+  var currentTime = hr + ":" + _min + ":" + sec;
+
+  // print time
+  document.getElementsByClassName("hms")[0].innerHTML = currentTime;
+  document.getElementsByClassName("ampm")[0].innerHTML = ampm;
+
+  /* date */
+  var dow = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    month = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    day = dateInfo.getDate();
+
+  // store date
+  var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
+
+  document.getElementsByClassName("date")[0].innerHTML = currentDate;
+};
+
+// print time and date once, then update them every second
+updateTime();
+setInterval(function() {
+  updateTime()
+}, 1000);
+
+//Open in Popup -- Front and Back Nav 
+function newPopup(url) {
+    popupWindow = window.open(
+        url,'popUpWindow','height=1000,width=1850,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+
+
+  </script>  
+
+  
+</body>
+</html>

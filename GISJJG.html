@@ -1,0 +1,378 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script>
+//Reload Page every minute
+
+    function autoRefresh() {
+        window.location = window.location.href;
+    }
+    setInterval('autoRefresh()', 60000);
+	
+</script> 
+
+
+<style>
+* {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  text-align: right;
+  font-size: 1.4em;
+  line-height: 1.1em;  
+} 
+
+//Background Animation 
+html {
+  height:1080px;
+  width: 1920px;
+  margin: auto;
+}
+
+body {
+  width: 100%;
+  height: 100%; 
+  margin:auto;
+  background-color: #084d69;
+}
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+ background-image: linear-gradient(7deg, #1d7698 70%, #084d69 70%);  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:9s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateY(-15%);
+  }
+  100% {
+    transform:translateY(15%);
+  }
+}
+
+
+//#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 1920px;
+  min-height: 1080px;
+  z-index: -5;
+}
+
+.resourceCard {
+  display: block;
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  padding-top: 1px;
+  border-radius: 15px;
+  margin: 0 10px;
+  //filter: drop-shadow(5px 5px 6px #ddd);
+}
+
+.resourceCardLink {
+    text-decoration: none;
+}
+
+.resourceCardImage {
+  display: block;
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.resourceRow {
+  float: left;
+  margin-bottom: 0;
+}
+
+.cardRow {
+width: 820px;
+}
+
+
+.resourceCardDescription {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  padding-top: 5px;
+  line-height: 20px;
+}
+ 
+
+.resourceCard:hover {
+  background-color: 'blue'; 
+}
+
+.resourceIcons {
+	display: block;
+	width: 100%:
+	margin: auto;
+	margin-top: 60px;
+}
+
+//Clock
+body {
+    font-family: "Muli", sans-serif;
+    font-weight: 200;
+}
+.time {
+    color: black !important;
+    padding: 8px;
+    text-align: right;
+    width: 400px;
+    line-height: .75em;
+    margin: 0px 35px 25px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	font-weight: 200;
+}
+.hms {
+    font-size: 36pt;
+    font-weight: 400;
+}
+.ampm {
+    font-size: 16pt;
+	font-weight: 300;
+}
+.date {
+    font-size: 24pt;
+	font-weight: 300;
+}
+
+.libraryLogo {
+	display: none;
+	float: left;
+	bottom: 0;
+	margin-top: 585px;
+	margin-left: 35px;
+	z-index: 4;
+}
+
+.resourceBanner {
+	width: 820px;
+	height: 300px;
+	border: none;
+	border-radius: 15px;
+	background-color: white;
+	color: black; 	
+	margin: auto; 
+	margin-top: 100px;	
+}
+.resourceBannerTitle p {
+	height: 20px;
+	color: black;
+	font-size: .8rem;
+	text-align: center;
+	margin: 0;
+}
+
+.selfcheck-slideshow {
+width: 455px;
+height: 258px; 
+background-color: white; 
+border-radius: 15px; 
+border: 25px solid white;
+margin-left: 185px;
+margin-top: 20px; 
+margin-bottom: 20px;
+position: relative;
+overflow: hidden;
+}
+
+#slideshowFrame {
+width: 155%;
+height: 155%; 
+position: absolute;
+margin-left: -405px;
+margin-top: -40px;
+}
+
+.libcalModule {
+width: 770px;
+height: 250px; 
+margin: auto;
+margin-top: 30px;
+margin-top: 30px;
+background-color: white;
+border-radius: 15px;
+}
+
+.libcalwrapper {
+width: 770px;
+height: 260px;
+position: relative;
+overflow: hidden;
+margin-top: 50px;
+border-radius: 15px;
+}
+
+.libcaliframe {
+width: 100%;
+height: 400%;
+position: absolute;
+margin-left: -770px;
+margin-top: -470px;
+border: none;
+pointer-events: none;
+}
+
+
+
+#rhhQR {
+width: 100%;
+padding: 20px 70px 10px 70px;
+
+border-radius: 15px;
+}
+
+
+.QRcard {
+background-color: white; 
+width: 290px;
+height: 258px;
+border-radius: 15px; 
+margin-left: 25px;
+margin-top: 20px;
+}
+
+#rhhQR p {
+color: black;
+
+}
+
+</style>
+
+</head>
+  
+<body> 
+
+<div class="libraryLogo"><img src="https://github.com/mckinneylibrary/images/blob/master/logos/LibraryLogo_InvertedWhite.png?raw=true"></div>
+
+<!--Background Animation-->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+<!--Libcal Schedule-->
+<div class="libcalModule">
+		<div class="libcalwrapper">
+			<iframe class="libcaliframe" src="https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view" scrolling="no"></iframe>
+	</div>
+</div>
+
+<!--Ads for Programs-->
+<div class="container">
+<div class="row">    
+		<div class="selfcheck-slideshow">
+			<iframe id="slideshowFrame" class="col" src="https://docs.google.com/presentation/d/e/2PACX-1vQOJxWhlkwa1zrN5TyJIwY4JJrhd6Vfi2a1As17tE3G_CXV56ADRLeuBSZ_2dwy6XTnL-bxH1y_Z6Cl/embed?start=true&loop=true&delayms=9000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+		</div>
+ 
+
+		<div class="QRcard">
+			<img id="rhhQR" src="https://github.com/mckinneylibrary/images/blob/master/GIS_GUI/JJG%20Study%20Room%20QR%20Code.png?raw=true">
+			<p style="color: black; font-size: 20px; text-align: center; line-height: 24px;">Scan Here to <br> Book a Room</p>
+		</div>
+</div>
+</div> 
+
+<!--Clock-->
+<div class="time">
+        <span class="hms"></span>
+        <span class="ampm"></span>
+        <br>
+        <span class="date"></span>
+</div>
+
+
+  <script>
+  function updateTime() {
+  var dateInfo = new Date();
+
+  /* time */
+  var hr,
+    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+    sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
+    ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
+
+  // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
+  if (dateInfo.getHours() == 0) {
+    hr = 12;
+  } else if (dateInfo.getHours() > 12) {
+    hr = dateInfo.getHours() - 12;
+  } else {
+    hr = dateInfo.getHours();
+  }
+
+  var currentTime = hr + ":" + _min + ":" + sec;
+
+  // print time
+  document.getElementsByClassName("hms")[0].innerHTML = currentTime;
+  document.getElementsByClassName("ampm")[0].innerHTML = ampm;
+
+  /* date */
+  var dow = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    month = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    day = dateInfo.getDate();
+
+  // store date
+  var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
+
+  document.getElementsByClassName("date")[0].innerHTML = currentDate;
+};
+
+// print time and date once, then update them every second
+updateTime();
+setInterval(function() {
+  updateTime()
+}, 1000);
+
+
+  </script>  
+
+  
+</body>
+</html>
