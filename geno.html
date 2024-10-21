@@ -6,6 +6,47 @@
     font-size: 40px;
 }
 
+* {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  text-align: right;
+  font-size: 1.4em;
+  line-height: 1.1em;  
+} 
+
+//Background Animation 
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-color: #C724B1;
+}
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+ background-image: linear-gradient(7deg, #da78f0 70%, #C724B1 70%);  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:9s;
+}
+
+
+    
+    
 </style>
     
  <body>
