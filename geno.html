@@ -64,17 +64,6 @@ body {
   z-index: -5;
 }
 
-.resourceCard {
-  display: block;
-  background-color: white;
-  width: 190px;
-  height: 225px;
-  padding-top: 1px;
-  border-radius: 15px;
-  margin-top: 20px;
-  filter: drop-shadow(5px 5px 6px #444);
-}
-
 </style>
 
 <style type="text/css">
@@ -121,32 +110,4 @@ onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black
 
 
 
-
-
-<div class="time">
-        <span class="hms">2:42:03</span>
-        <span class="ampm">PM</span>
-        <br>
-        <span class="date">Tuesday, March 5</span>
-</div>
-
- 
-
-
-
-<script> 
-//Open in Popup -- Front and Back Nav 
-//function newPopup(url) {
-   // popupWindow = window.open(
-        url,'popUpWindow','height=1000,width=1850,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-}
-
-
-//Refresh Entire Page after __ Sec Idle 
-var time = new Date().getTime();
-$(document.body).bind("mousemove keypress", function () {
-    time = new Date().getTime();
-});
-  </script>  
-
-  </body></html>
+</body></html>
