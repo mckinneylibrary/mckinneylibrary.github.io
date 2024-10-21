@@ -59,17 +59,15 @@ body {
 
  <font color="white">    
 <b>Instructions:<p>
-1. Input search "term" or "name" or "location" in inside the search at bottom of instructions.<p>
+1. Input search "term" or "name" or "location" in inside the correct database search box.<p>
 2. Press Submit button.<p>    
-3. Copy and paste the script below into the new Google search page:<p>   
-  <i>site:testserver1.org | site:testserver2.gov</i> <p> 
-4. Continue using the new Google search page replacing the "term" for each new search.
- </font color="white">  
+</font color="white">  
 </b>
 
 
  <font color="black">       
 <p> 
+Testserver1.org    
 <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
 <input name="sitesearch" type="hidden" value="google.com">
 <input autocomplete="on" class="form-control search" name="q" placeholder="Input Search Term" type="text">
@@ -77,10 +75,25 @@ body {
 </form>
  </p>
      <p>
-        <p>
- </font color="black"> 
-<font color="white"><b>Successful Example:<br>
-     <img src="https://github.com/mckinneylibrary/images/blob/b3064dac85d618a648df08e1d7c07676e2839577/googl1.PNG?raw=true">
-     
+
+Testserver2.org    
+<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden" value="yahoo.com">
+<input autocomplete="on" class="form-control search" name="q" placeholder="Input Search Term" type="text">
+<button class="button" type="submit">Submit</button>
+</form>
+ </p>
+     <p>
+Testserver3.org    
+<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden" value="aol.com">
+<input autocomplete="on" class="form-control search" name="q" placeholder="Input Search Term" type="text">
+<button class="button" type="submit">Submit</button>
+</form>
+ </p>
+     <p>
+
+
+         
      
 </body></html>
