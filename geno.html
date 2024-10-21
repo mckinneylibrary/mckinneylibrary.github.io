@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link href="./CatalogJJG_files/css2" rel="stylesheet">
+<link rel="stylesheet" href="./CatalogJJG_files/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CatalogJJG_files/bootstrap.min.css">
+  <script src="./CatalogJJG_files/jquery.min.js.download"></script>
+  <script src="./CatalogJJG_files/bootstrap.min.js.download"></script>
+
+
+<style>
+* {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  text-align: right;
+  font-size: 1.4em;
+  line-height: 1.1em;  
+} 
+
+//Background Animation 
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-color: #084d69;
+}
+
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+ background-image: linear-gradient(7deg, #1d7698 70%, #084d69 70%);  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:9s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateY(-15%);
+  }
+  100% {
+    transform:translateY(15%);
+  }
+}
+
+
+//#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 1920px;
+  min-height: 1080px;
+  z-index: -5;
+}
+
+.resourceCard {
+  display: block;
+  background-color: white;
+  width: 190px;
+  height: 225px;
+  padding-top: 1px;
+  border-radius: 15px;
+  margin-top: 20px;
+  filter: drop-shadow(5px 5px 6px #444);
+}
+
+.resourceCardLink {
+    text-decoration: none;
+}
+
+.resourceCardImage {
+  display: block;
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.resourceRow {
+  float: left;
+  margin-left: 20px; 
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.resourceCardDescription {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  padding-top: 5px;
+  line: 20px;
+}
+
+.resourceIcons {
+  margin-left: 440px;
+  margin-top: 225px;
+}
+
+.resourceCard:hover {
+  background-color: 'blue';
+}
+
+//Clock
+body {
+    font-family: "Muli", sans-serif;
+    font-weight: 200;
+}
+.time {
+    color: black !important;
+    padding: 8px;
+    text-align: right;
+    width: 400px;
+    line-height: .75em;
+    margin: 0px 35px 25px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	font-weight: 200;
+}
+.hms {
+    font-size: 36pt;
+    font-weight: 400;
+}
+.ampm {
+    font-size: 16pt;
+	font-weight: 300;
+}
+.date {
+    font-size: 24pt;
+	font-weight: 300;
+}
+
+.surveyButton {
+	float: left;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	z-index: 4;
+	border-radius: 15px;
+	background-color: white;
+	padding: 15px;
+	vertical-align: middle;
+}
+
+#surveyIcon, #surveyText {
+line-height:  18px;
+}
+
+#surveyIcon {
+vertical-align: middle;
+color: #084d69;
+height: 1.5em;
+padding-bottom: 5px; 
+padding-right: 5px;
+}
+
+
+/*** Layout For Portrait Desktop Mode ***/
+@media (max-width: 1082px) {
+	.resourceIcons {
+		margin-left: 105px;
+		margin-top: 550px;
+		z-index: 7;
+	}
+}
+
+</style>
+
+<style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}</style></head>
+  
+<body>
+
+ 
+<!--Background Animation-->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+<form method="get" action="http://www.google.com/search">
+
+<div style="border:2px dotted black;padding:4px;width:15em;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25" style="color:#808080;"
+maxlength="255" value="Input Search Term"
+onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+<input type="submit" value="Go!" />
+<input type="hidden" name="sitesearch" value="site:familysearch.org | site:catalog.archives.gov" /></td></tr>
+</table>
+</div>
+
+</form>
+
+
+
+
+
+
+<div class="time">
+        <span class="hms">2:42:03</span>
+        <span class="ampm">PM</span>
+        <br>
+        <span class="date">Tuesday, March 5</span>
+</div>
+
+  <script>
+  function updateTime() {
+  var dateInfo = new Date();
+
+  /* time */
+  var hr,
+    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+    sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
+    ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
+
+  // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
+  if (dateInfo.getHours() == 0) {
+    hr = 12;
+  } else if (dateInfo.getHours() > 12) {
+    hr = dateInfo.getHours() - 12;
+  } else {
+    hr = dateInfo.getHours();
+  }
+
+  var currentTime = hr + ":" + _min + ":" + sec;
+
+  // print time
+  document.getElementsByClassName("hms")[0].innerHTML = currentTime;
+  document.getElementsByClassName("ampm")[0].innerHTML = ampm;
+
+  /* date */
+  var dow = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    month = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    day = dateInfo.getDate();
+
+  // store date
+  var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
+
+  document.getElementsByClassName("date")[0].innerHTML = currentDate;
+};
+
+// print time and date once, then update them every second
+updateTime();
+setInterval(function() {
+  updateTime()
+}, 1000);
+
+setInterval(function() {
+    if (new Date().getTime() - time >= 60000) {
+        window.location.reload(true);
+    }
+}, 1000);
+</script>
+<script> 
+//Open in Popup -- Front and Back Nav 
+//function newPopup(url) {
+   // popupWindow = window.open(
+        url,'popUpWindow','height=1000,width=1850,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+
+
+//Refresh Entire Page after __ Sec Idle 
+var time = new Date().getTime();
+$(document.body).bind("mousemove keypress", function () {
+    time = new Date().getTime();
+});
+  </script>  
+
+  </body></html>
