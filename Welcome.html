@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>McKinney Public Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=League+Spartan' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+
+    <style type="text/css">
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;      /* vertical centering */
+        justify-content: center;  /* horizontal centering */
+        min-height: 100vh;
+        background-color: #f5f5f5;
+        font-family: 'Helvetica 35 Thin', sans-serif;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 16px;        /* rounded corners */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* subtle drop shadow */
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-family: 'League Spartan', sans-serif;
+        color: #084d69;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 10px 0 20px;
+      }
+
+      .email-content p {
+        font-size: .9em;
+        text-align: left;
+        font-weight: 300;
+        margin: 10px 15px;
+      }
+
+      .app-links img {
+        border-radius: 15px;
+        width: 100px;
+        margin-left: 10px;
+      }
+
+      .other-services {
+        width: 100%;
+        background-color: #edf2f4;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+      }
+
+      .other-services img {
+        width: 100px;
+      }
+
+      .other-services p {
+        text-align: center;
+        font-size: .9em;
+        color: #000;
+      }
+
+      .library-policies p {
+        font-size: .9em;
+        text-align: center;
+        margin: 20px 0 10px;
+      }
+
+      footer {
+        background-color: #084d69;
+        color: #fff;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 20px; /* spacing from content */
+      }
+
+      footer a {
+        color: #e4ca38;
+      }
+
+      /* Responsive scaling */
+      @media only screen and (max-width: 767px) {
+        .wrapper {
+          width: 300px;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <!-- Welcome Header -->
+        <h1>Welcome to the <br>McKinney Public Library!</h1>
+
+        <!-- Barcode APP Links -->
+        <table class="email-content app-links" width="100%" cellspacing="0">
+          <tr>
+            <td><a href="https://onelink.to/gwhrp7"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/1.png?raw=true" alt="Aspen Lida Library Logo"></a></td>
+            <td><p>Download our app to access your account, store your card on your phone & browse our catalog</p></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.yourcloudlibrary.com/#apps"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/2.png?raw=true" alt="Cloud Library Logo"></a></td>
+            <td><p>Explore a vast collection of eBooks & audiobooks</p></td>
+          </tr>
+          <tr>
+            <td><a href="https://mckinneytexas.libcal.com/calendars?cid=-1&t=g&d=0000-00-00&cal=-1&inc=0"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/4.png?raw=true" alt="Program Guide Icon"></a></td>
+            <td><p>View our program guide & register for programs</p></td>
+          </tr>
+          <tr>
+            <td><a href="https://mckinneypubliclibrary.us19.list-manage.com/subscribe?u=f1ee553a0f1618fafc93bc0b3&id=f7dcd61efe"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/envelope.png?raw=true" alt="Email Icon"></a></td>
+            <td><p>Subscribe to our newsletter</p></td>
+          </tr>
+        </table>
+
+        <!-- Other Services -->
+        <table class="other-services">
+          <tr>
+            <td><a href="https://mckinney.aspendiscovery.org/"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/MCKSQU.png?raw=true"><p>Explore our Catalog</p></a></td>
+            <td><a href="https://ipac.mckinneytexas.org/roomsjjg"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/7.png?raw=true"><p>Book a study room</p></a></td>
+            <td><a href="https://facebook.com/MckinneyLibrary"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/6.png?raw=true"><p>Follow us on Facebook</p></a></td>
+          </tr>
+        </table>
+
+        <!-- Policies -->
+        <div class="email-content library-policies">
+          <p>View our complete list of library policies <a href="https://www.mckinneytexas.org/1515/Library-Policies">here</a>.</p>
+        </div>
+      </div>
+
+      <!-- Footer inside card -->
+      <footer>
+        <p>You are receiving this from the <a href="https://www.mckinneytexas.org/116/Library">McKinney Public Library</a></p>
+        <p>IMPORTANT: This email address is not monitored for responses. If you have questions or concerns, please contact the McKinney Public Library System at 972.547.7323.</p>
+      </footer>
+    </div>
+  </body>
+</html>
