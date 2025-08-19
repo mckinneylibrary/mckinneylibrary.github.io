@@ -1,157 +1,124 @@
 <html>
   <head>
     <title>McKinney Public Library</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://fonts.googleapis.com/css?family=League+Spartan' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href='https://font<html>
+  <head>
+    <title>McKinney Public Library</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
-
-    <style type="text/css">
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        display: flex;
-        align-items: center;      /* vertical centering */
-        justify-content: center;  /* horizontal centering */
-        min-height: 100vh;
-        background-color: #f5f5f5;
-        font-family: 'Helvetica 35 Thin', sans-serif;
-      }
-
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        width: 100%;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 16px;        /* rounded corners */
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* subtle drop shadow */
-        box-sizing: border-box;
-      }
-
-      h1 {
-        font-family: 'League Spartan', sans-serif;
-        color: #084d69;
-        font-size: 2.5em;
-        text-align: center;
-        line-height: 2em;
-        margin: 10px 0 20px;
-      }
-
-      .email-content p {
-        font-size: .9em;
-        text-align: left;
-        font-weight: 300;
-        margin: 10px 15px;
-      }
-
-      .app-links img {
-        border-radius: 15px;
-        width: 100px;
-        margin-left: 10px;
-      }
-
-      .other-services {
-        width: 100%;
-        background-color: #edf2f4;
-        padding: 20px;
-        border-radius: 12px;
-        margin-top: 20px;
-      }
-
-      .other-services img {
-        width: 100px;
-      }
-
-      .other-services p {
-        text-align: center;
-        font-size: .9em;
-        color: #000;
-      }
-
-      .library-policies p {
-        font-size: .9em;
-        text-align: center;
-        margin: 20px 0 10px;
-      }
-
-      footer {
-        background-color: #084d69;
-        color: #fff;
-        font-size: 10px;
-        line-height: 14px;
-        text-align: center;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 20px; /* spacing from content */
-      }
-
-      footer a {
-        color: #e4ca38;
-      }
-
-      /* Responsive scaling */
-      @media only screen and (max-width: 767px) {
-        .wrapper {
-          width: 300px;
-          padding: 15px;
-        }
-      }
-    </style>
   </head>
 
+  <style type="text/css">
+	body {
+	background-color: #fff;
+	}
+  
+    @media only screen and (max-width: 350px) {
+    /* mobile-specific CSS styles go here */
+        table[class=email], table[class=email-content] { clear: both; width: 320px !important; }
+    }
+    @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+  </style>
+
   <body>
-    <div class="wrapper">
-      <div class="content">
-        <!-- Welcome Header -->
-        <h1>Welcome to the <br>McKinney Public Library!</h1>
+<!-- Wrapper-->
+    <table style="width: 300px; margin: auto;" border="0" cellpadding="0" cellspacing="0" bgcolor="#fff">
+      <tr>
+        <td valign="top" bgcolor="#fff">
 
-        <!-- Barcode APP Links -->
-        <table class="email-content app-links" width="100%" cellspacing="0">
-          <tr>
-            <td><a href="https://onelink.to/gwhrp7"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/1.png?raw=true" alt="Aspen Lida Library Logo"></a></td>
-            <td><p>Download our app to access your account, store your card on your phone & browse our catalog</p></td>
-          </tr>
-          <tr>
-            <td><a href="https://www.yourcloudlibrary.com/#apps"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/2.png?raw=true" alt="Cloud Library Logo"></a></td>
-            <td><p>Explore a vast collection of eBooks & audiobooks</p></td>
-          </tr>
-          <tr>
-            <td><a href="https://mckinneytexas.libcal.com/calendars?cid=-1&t=g&d=0000-00-00&cal=-1&inc=0"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/4.png?raw=true" alt="Program Guide Icon"></a></td>
-            <td><p>View our program guide & register for programs</p></td>
-          </tr>
-          <tr>
-            <td><a href="https://mckinneypubliclibrary.us19.list-manage.com/subscribe?u=f1ee553a0f1618fafc93bc0b3&id=f7dcd61efe"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/envelope.png?raw=true" alt="Email Icon"></a></td>
-            <td><p>Subscribe to our newsletter</p></td>
-          </tr>
-        </table>
+<!--Email Body-->
+    <table class="email" width="300" border="0"  cellspacing="0">
+	  <!-- First and Last Name -->
+	    <tr>   
+			<td>
+				<!--<p style="background-color: #fff; font-family: 'Helvetica 35 Thin', sans-serif; font-size: 1 em; font-weight: thin; line-height: 48px; margin:0px; padding-left: 15px; text-align: left;">
+				<span>Hello <<borrowers.firstname>> <<borrowers.surname>>,</span>
+				</p>-->
+			</td>	
+		</tr>	
+	  <!--Welcome Header -->
+	  <tr>
+		<td>
+		<h1 style="font-family: 'League Spartan',sans-serif; color:#084d69; font-size: 1.5em; text-align: center; margin-top: 20px;">Welcome to the McKinney Public Library!</h1>
+		</td>
+	  </tr>
+    <!-- Main Email Content --> 
+	  <tr>
+        <td align="left" valign="top" bgcolor="#ffffff">
+       
+		<!--Account Details Section-->
+			<!--<table class="email-content account-details" align="center" width="90%;" cellspacing="0">
+				<tr style="border: 5px solid #edf2f4; border-radius: 15px;">			
+					<td valign="top" bgcolor="#0081a0" style="border: 5px solid #0081a0; border-radius: 15px;">
+						<p style="color: #fff; font-family:'Helvetica 35 Thin', sans-serif; font-size: 1em; font-weight: normal; line-height: 20px; margin-top: 15px; padding: 5px 0; text-align: center; background-color: #0081a0; color: #fff;">Your Library Account number is: </p>
+						<p style="background-color: white; text-align: center; font-family:'Helvetica 35 Thin', sans-serif; font-size: 1em; padding: 20px 0;"><<borrowers.cardnumber>></p>	
+						<a href="https://mckinney.aspendiscovery.org/MyAccount/LibraryCard" style="color: #fff;"><p style="text-align: center; font-family:'Helvetica 35 Thin', sans-serif; font-size: 1em; padding: 5px; margin-bottom: 15px;">Sign in to your account</p></a>		 
+					</td>
+				</tr>	
+			</table>-->
+		
+	
+		<!-- Barcode APP Links --> 
+			<table class="email-content app-links" align="left" width="100%" cellspacing="0" style="margin-bottom: 25px; margin-top: 25px;">						
+                    <tr valign="top" bgcolor="#fff">
+						<td><a href="https://onelink.to/gwhrp7"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/1.png?raw=true" style="border-radius: 15px; width: 100px; margin-left: 10px;" alt="Aspen Lida Library Logo"></a></td>
+						<td><p style="font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-align: left; font-weight: light; margin-left: 20px; padding-right: 15px;">Download our app to access your account, store your card on your phone & browse our catalog</p></td>
+					</tr>
+                    <tr valign="top" bgcolor="#fff">
+						<td style="background-color: #fff;"><a href="https://www.yourcloudlibrary.com/#apps"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/2.png?raw=true" style="border-radius: 15px; width: 100px; margin-left: 10px;" alt="Cloud Library Logo"></a></td>
+						<td><p style="font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-align: left; font-weight: light; margin-left: 20px; padding-top: 15px; margin-right: 15px; background-color: #fff;">Explore a vast collection of eBooks & audiobooks</p></td>
+					</tr>
+                   <tr valign="top" bgcolor="#fff" style="">
+						<td><a href="https://mckinneytexas.libcal.com/calendars?cid=-1&t=g&d=0000-00-00&cal=-1&inc=0"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/4.png?raw=true" style="border-radius: 15px; width: 100px; margin-left: 10px;" alt="Program Guide Icon"></a></td>
+						<td><p style="font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-align: left; font-weight: light; margin-left: 20px; padding-top: 15px; margin-right: 15px;">View our program guide & register for programs</p></td>
+					</tr>
+<tr valign="top" bgcolor="#fff" style="margin-bottom: 15px;">
+						<td><a href="https://mckinneypubliclibrary.us19.list-manage.com/subscribe?u=f1ee553a0f1618fafc93bc0b3&id=f7dcd61efe"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/envelope.png?raw=true" style="border-radius: 15px; width: 100px; margin-left: 10px;" alt="Email Icon"></a></td>
+						<td><p style="font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-align: left; font-weight: light; margin-left: 20px; padding-top: 25px; padding-right: 15px;">Subscribe to our newsletter</p></td>
+					</tr>
 
-        <!-- Other Services -->
-        <table class="other-services">
-          <tr>
-            <td><a href="https://mckinney.aspendiscovery.org/"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/MCKSQU.png?raw=true"><p>Explore our Catalog</p></a></td>
-            <td><a href="https://ipac.mckinneytexas.org/roomsjjg"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/7.png?raw=true"><p>Book a study room</p></a></td>
-            <td><a href="https://facebook.com/MckinneyLibrary"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/6.png?raw=true"><p>Follow us on Facebook</p></a></td>
-          </tr>
-        </table>
-
-        <!-- Policies -->
-        <div class="email-content library-policies">
-          <p>View our complete list of library policies <a href="https://www.mckinneytexas.org/1515/Library-Policies">here</a>.</p>
-        </div>
-      </div>
-
-      <!-- Footer inside card -->
-      <footer>
-        <p>You are receiving this from the <a href="https://www.mckinneytexas.org/116/Library">McKinney Public Library</a></p>
-        <p>IMPORTANT: This email address is not monitored for responses. If you have questions or concerns, please contact the McKinney Public Library System at 972.547.7323.</p>
-      </footer>
-    </div>
+			</table>
+            
+        <!--Other Services-->
+            <table style="width: 100%; height: 50px; background-color: #edf2f4; padding: 20px;">
+                <tr>
+                <td><a href="https://mckinney.aspendiscovery.org/" style="text-decoration: none;"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/MCKSQU.png?raw=true" style="width: 100px;"><p style="text-align: center; font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-decoration: none; color: #000;">Explore our Catalog</p></a></td>
+                <td><a href="https://ipac.mckinneytexas.org/roomsjjg" style="text-decoration: none;"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/7.png?raw=true" style="width: 100px;"><p style="text-align: center; font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-decoration: none; color: #000;">Book a study room</p></a></td>
+                <td><a href="https://facebook.com/MckinneyLibrary" style="text-decoration: none;"><img src="https://github.com/mckinneylibrary/images/blob/master/WelcomeEmail/6.png?raw=true" style="width: 100px;"><p style="text-align: center; font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-decoration: none; color: #000;">Follow us on Facebook</p></a></td>    
+                </tr>
+            </table>
+		
+		<!-- Policies --> 
+			<table class="email-content library-policies" align="left" width="100%" cellpadding="20" cellspacing="0">
+				<tr>			
+					<td valign="top" bgcolor="#fff" style="">
+						<!--<h2 style="color: black; font-family: Tahoma,Verdana, sans-serif; font-size: 14px; font-weight: bold; line-height: 20px; margin: 0 0 10px 0; padding: 0; text-align: center;">Library Card Policies</h2>-->
+						<p style="font-family: 'Helvetica 35 Thin', sans-serif; font-size: .9em; text-align: center; padding-top: 0;">View our complete list of library policies <a href="https://www.mckinneytexas.org/1515/Library-Policies">here</a>.</p>			 
+					</td>
+				</tr>
+				<br>
+			</table>
+		
+<!--Footer-->
+	   <table width="100%" style="background-color: #084d69;">
+	   <tr>
+           <td align="left" valign="top">
+			 <p style="background-color: #084d69; color: #ffffff; font-family: 'Helvetica 35 Thin', sans-serif; font-size: 10px; line-height: 12px; margin: 5px; padding: 0; font-weight: light; text-align: center;">
+			You are receiving this from the <a style="color:#e4ca38;" href="https://www.mckinneytexas.org/116/Library">McKinney Public Library</a>	</p>		
+			<p style="background-color: #084d69; color: #ffffff;font-family: 'Helvetica 35 Thin', sans-serif; font-size: 10px; line-height: 12px; margin: 5px; font-weight: light;">IMPORTANT:  This email address is not monitored for responses. If you have questions or concerns, please contact the McKinney Public Library System at 972.547.7323.</p> 
+		   </td>
+       </tr>
+	   </table>		
+	   
+	   </td>
+      </tr>
+<!-- Close Email Body Table -->     
+	</table>
+<!-- Close Wrapper -->
+        </td>
+      </tr>	
+	</table>
   </body>
 </html>
-
-
