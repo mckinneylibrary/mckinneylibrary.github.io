@@ -28,7 +28,7 @@
 	
 </script>-->
 
-
+<!---The CSS tylesheet are included in the header because it is a one page HTML App--->
 <style>
 * {
   color: #fff;
@@ -239,8 +239,8 @@ padding-right: 5px;
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 
-
-<!--Row 1-->
+<!--Column of Icons in the OPAC, loading cards into two rows of icons.-->
+<!--Column 1-->
 <div class="resourceIcons"> 
   <div class="resourceRow">
     <a href="https://mckinney.aspendiscovery.org/" onclick="window.open(this.href,&#39;targetWindow&#39;,`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
@@ -265,7 +265,7 @@ padding-right: 5px;
 	
   </div>
 
-<!--Row 2-->
+<!--Column 2-->
   <div class="resourceRow">
     
       <a href="https://mckinney.aspendiscovery.org/MyAccount/SelfReg" onclick="window.open(this.href,&#39;targetWindow&#39;,`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
@@ -288,7 +288,7 @@ padding-right: 5px;
 	
 </div>
 
- <!--Row 3--> 
+ <!--Column 3--> 
   <div class="resourceRow">
 	      <a href="https://mckinneytexas.libcal.com/calendar/jjgl?cid=-1&t=g&d=0000-00-00&cal=-1&inc=0" onclick="window.open(this.href,&#39;targetWindow&#39;,`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
  return false;" class="resourceCardLink">
@@ -311,7 +311,7 @@ padding-right: 5px;
 	
 </div>
 
-<!---Row 4-->
+<!---Column 4 -->
 <div class="resourceRow">
     
       <a href="https://mckinneytexas.libcal.com/spaces?lid=17668&gid=37394" onclick="window.open(this.href,&#39;targetWindow&#39;,`toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1080, height=1920`);
@@ -342,7 +342,7 @@ padding-right: 5px;
   <script>
   function updateTime() {
   var dateInfo = new Date();
-
+/*********************Clock at the bottom right*********************************************>
   /* time */
   var hr,
     _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
@@ -409,13 +409,15 @@ setInterval(function() {
 }, 1000);
 </script>
 <script> 
-//Open in Popup -- Front and Back Nav 
+
+	
+/***********************************Open in Popup -- Front and Back Nav ***********************************************************/
 //function newPopup(url) {
    // popupWindow = window.open(
         url,'popUpWindow','height=1000,width=1850,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 }
 
-
+/******************************Refresh OPAC Page *******************************************************************************/
 //Refresh Entire Page after __ Sec Idle 
 var time = new Date().getTime();
 $(document.body).bind("mousemove keypress", function () {
