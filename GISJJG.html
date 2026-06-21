@@ -309,7 +309,7 @@ color: black;
     if (targetDiv) {
         const secureIframe = document.createElement('iframe');
         
-        // 1. Injects your original layout positioning directly via inline styles
+        // Apply your exact, perfect positioning coordinates
         secureIframe.style.width = '100%';
         secureIframe.style.height = '400%';
         secureIframe.style.position = 'absolute';
@@ -318,15 +318,20 @@ color: black;
         secureIframe.style.border = 'none';
         secureIframe.style.pointerEvents = 'none';
         
-        // 2. Loads the target LibCal framework and scrubs off the GitHub origin header
+        // Target URL
         secureIframe.src = 'https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view';
+        
+        // REMOVED 'no-referrer' to prevent the kiosk from blocking the unknown source.
+        // Instead, we use standard scrolling controls:
         secureIframe.setAttribute('scrolling', 'no');
-        secureIframe.setAttribute('referrerpolicy', 'no-referrer'); 
         
         targetDiv.appendChild(secureIframe);
     }
 })();
-
+	
+	
+	
+	
 function updateTime() {
   var dateInfo = new Date();
 
