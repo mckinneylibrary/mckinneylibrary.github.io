@@ -229,12 +229,13 @@ padding-top: 44px;
 border-radius: 15px;
 }
 
+/* JavaScript generated iframe style targets here */
 .libcaliframe {
 width: 100%;
 height: 400%;
 position: absolute;
 margin-left: -770px;
-margin-top: -640px;   /* Adjusted down from -645px to match the layout shift */
+margin-top: -380px;   /* Adjusted down from -645px to match layout shift */
 border: none;
 pointer-events: none;
 }
@@ -277,11 +278,10 @@ color: black;
 <div class="bg bg3"></div>
 
 
-<!--Libcal Schedule-->
+<!--Libcal Schedule Container-->
 <div class="libcalModule">
-		<div class="libcalwrapper">
-            <!-- Added referrerpolicy to bypass the GitHub domain block -->
-			<iframe class="libcaliframe" src="https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view" scrolling="no" referrerpolicy="no-referrer"></iframe>
+		<div class="libcalwrapper" id="libcalContainer">
+            <!-- The JavaScript below will inject the security-bypassing iframe right here -->
 	</div>
 </div>
 
@@ -310,6 +310,19 @@ color: black;
 
 
   <script>
+  // JAVASCRIPT INJECTION: Dynamically generates the iframe to scrub off the GitHub web origin signature
+  (function loadSecureCalendar() {
+      const targetDiv = document.getElementById('libcalContainer');
+      if (targetDiv) {
+          const secureIframe = document.createElement('iframe');
+          secureIframe.className = 'libcaliframe';
+          secureIframe.src = 'https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view';
+          secureIframe.setAttribute('scrolling', 'no');
+          secureIframe.setAttribute('referrerpolicy', 'no-referrer'); // Ensures origin domain is hidden on loading
+          targetDiv.appendChild(secureIframe);
+      }
+  })();
+
   function updateTime() {
   var dateInfo = new Date();
 
@@ -371,7 +384,6 @@ updateTime();
 setInterval(function() {
   updateTime()
 }, 1000);
-
 
   </script>  
 
