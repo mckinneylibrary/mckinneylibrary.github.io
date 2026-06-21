@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
@@ -224,7 +224,7 @@ width: 770px;
 height: 260px;
 position: relative;
 overflow: hidden;
-margin-top: 50px;    
+margin-top: 50px;     
 padding-top: 44px;
 border-radius: 15px;
 }
@@ -234,7 +234,7 @@ width: 100%;
 height: 400%;
 position: absolute;
 margin-left: -770px;
-margin-top: -645px;
+margin-top: -640px;   /* Adjusted down from -645px to match the layout shift */
 border: none;
 pointer-events: none;
 }
@@ -280,7 +280,8 @@ color: black;
 <!--Libcal Schedule-->
 <div class="libcalModule">
 		<div class="libcalwrapper">
-			<iframe class="libcaliframe" src="https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view" scrolling="no"></iframe>
+            <!-- Added referrerpolicy to bypass the GitHub domain block -->
+			<iframe class="libcaliframe" src="https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view" scrolling="no" referrerpolicy="no-referrer"></iframe>
 	</div>
 </div>
 
@@ -294,7 +295,7 @@ color: black;
 
 		<div class="QRcard">
 			<img id="rhhQR" src="https://github.com/mckinneylibrary/images/blob/master/GIS_GUI/JJG%20Study%20Room%20QR%20Code.png?raw=true">
-			<p style="color: black; font-size: 20px; text-align: center; line-height: 24px;">Scan to <br> Book a Room</p>
+			<p style="color: black; font-size: 20px; text-align: center; line-height: 24px;">Scan Here to <br> Book a Room</p>
 		</div>
 </div>
 </div> 
@@ -377,8 +378,3 @@ setInterval(function() {
   
 </body>
 </html>
-
-
-
-
-
