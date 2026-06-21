@@ -302,22 +302,32 @@ color: black;
         <span class="date"></span>
 </div>
 
+<script>
+// JAVASCRIPT INJECTION: Dynamically generates the iframe and applies your original styles inline to bypass CSS rendering glitches
+(function loadSecureCalendar() {
+    const targetDiv = document.getElementById('libcalContainer');
+    if (targetDiv) {
+        const secureIframe = document.createElement('iframe');
+        
+        // 1. Injects your original layout positioning directly via inline styles
+        secureIframe.style.width = '100%';
+        secureIframe.style.height = '400%';
+        secureIframe.style.position = 'absolute';
+        secureIframe.style.marginLeft = '-770px';
+        secureIframe.style.marginTop = '-645px';
+        secureIframe.style.border = 'none';
+        secureIframe.style.pointerEvents = 'none';
+        
+        // 2. Loads the target LibCal framework and scrubs off the GitHub origin header
+        secureIframe.src = 'https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view';
+        secureIframe.setAttribute('scrolling', 'no');
+        secureIframe.setAttribute('referrerpolicy', 'no-referrer'); 
+        
+        targetDiv.appendChild(secureIframe);
+    }
+})();
 
-  <script>
-  // JAVASCRIPT INJECTION: Dynamically generates the iframe to scrub off the GitHub web origin signature
-  (function loadSecureCalendar() {
-      const targetDiv = document.getElementById('libcalContainer');
-      if (targetDiv) {
-          const secureIframe = document.createElement('iframe');
-          secureIframe.className = 'libcaliframe';
-          secureIframe.src = 'https://mckinneytexas.libcal.com/spaces?lid=17668#fc-timelineHourlyShort-view';
-          secureIframe.setAttribute('scrolling', 'no');
-          secureIframe.setAttribute('referrerpolicy', 'no-referrer'); // Ensures origin domain is hidden on loading
-          targetDiv.appendChild(secureIframe);
-      }
-  })();
-
-  function updateTime() {
+function updateTime() {
   var dateInfo = new Date();
 
   /* time */
@@ -371,15 +381,14 @@ color: black;
   var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
 
   document.getElementsByClassName("date")[0].innerHTML = currentDate;
-};
+}
 
 // print time and date once, then update them every second
 updateTime();
 setInterval(function() {
   updateTime()
 }, 1000);
-
-  </script>  
+</script>
 
 </body>
 </html>
