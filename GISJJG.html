@@ -23,7 +23,7 @@
   line-height: 1.1em;  
 } 
 
-//Background Animation 
+/* Background Animation */
 html {
   height:1080px;
   width: 1920px;
@@ -35,11 +35,13 @@ body {
   height: 100%; 
   margin:auto;
   background-color: #084d69;
+  position: relative; /* Anchor for absolute positioning components */
 }
 
 .bg {
   animation:slide 5s ease-in-out infinite alternate;
- background-image: linear-gradient(7deg, #1d7698 70%, #084d69 70%);  bottom:0;
+  background-image: linear-gradient(7deg, #1d7698 70%, #084d69 70%);  
+  bottom:0;
   left:-50%;
   opacity:.5;
   position:fixed;
@@ -68,14 +70,14 @@ body {
 }
 
 
-//#backgroundVideo {
+/* #backgroundVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 1920px;
   min-height: 1080px;
   z-index: -5;
-}
+} */
 
 .resourceCard {
   display: block;
@@ -85,7 +87,6 @@ body {
   padding-top: 1px;
   border-radius: 15px;
   margin: 0 10px;
-  //filter: drop-shadow(5px 5px 6px #ddd);
 }
 
 .resourceCardLink {
@@ -106,7 +107,7 @@ body {
 }
 
 .cardRow {
-width: 820px;
+  width: 820px;
 }
 
 
@@ -125,13 +126,13 @@ width: 820px;
 }
 
 .resourceIcons {
-	display: block;
-	width: 100%:
-	margin: auto;
-	margin-top: 60px;
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-top: 60px;
 }
 
-//Clock
+/* Clock */
 body {
     font-family: "Muli", sans-serif;
     font-weight: 200;
@@ -189,79 +190,73 @@ body {
 }
 
 .selfcheck-slideshow {
-width: 455px;
-height: 258px; 
-background-color: white; 
-border-radius: 15px; 
-border: 25px solid white;
-margin-left: 185px;
-margin-top: 20px; 
-margin-bottom: 20px;
-position: relative;
-overflow: hidden;
+  width: 455px;
+  height: 258px; 
+  background-color: white; 
+  border-radius: 15px; 
+  border: 25px solid white;
+  margin-left: 185px;
+  margin-top: -30px; /* Adjusted up from 20px to prevent clock collision */
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 #slideshowFrame {
-width: 155%;
-height: 155%; 
-position: absolute;
-margin-left: -405px;
-margin-top: -40px;
+  width: 155%;
+  height: 155%; 
+  position: absolute;
+  margin-left: -405px;
+  margin-top: -40px;
 }
 
 .libcalModule {
-width: 770px;
-height: 250px; 
-margin: auto;
-margin-top: 30px;
-margin-top: 30px;
-background-color: white;
-border-radius: 15px;
+  width: 770px;
+  height: 250px; 
+  margin: auto;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .libcalwrapper {
-width: 770px;
-height: 260px;
-position: relative;
-overflow: hidden;
-margin-top: 50px;     
-padding-top: 44px;
-border-radius: 15px;
+  width: 770px;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;     
+  padding-top: 44px;
+  border-radius: 15px;
 }
 
-/* JavaScript generated iframe style targets here */
+/* Updated style targeting coordinates to fetch the correct schedule content */
 .libcaliframe {
-width: 100%;
-height: 400%;
-position: absolute;
-margin-left: -770px;
-margin-top: -645px;   /* Adjusted down from -645px to match layout shift */
-border: none;
-pointer-events: none;
+  width: 100%;
+  height: 400%;
+  position: absolute;
+  margin-left: -770px;
+  margin-top: -380px;   /* Shifted to perfectly frame the timeline grid view */
+  border: none;
+  pointer-events: none;
 }
-
-
 
 #rhhQR {
-width: 100%;
-padding: 20px 70px 10px 70px;
-
-border-radius: 15px;
+  width: 100%;
+  padding: 20px 70px 10px 70px;
+  border-radius: 15px;
 }
 
-
 .QRcard {
-background-color: white; 
-width: 290px;
-height: 258px;
-border-radius: 15px; 
-margin-left: 25px;
-margin-top: 20px;
+  background-color: white; 
+  width: 290px;
+  height: 258px;
+  border-radius: 15px; 
+  margin-left: 25px;
+  margin-top: -30px; /* Balanced to stay aligned with slideshow container */
 }
 
 #rhhQR p {
-color: black;
-
+  color: black;
 }
 
 </style>
@@ -272,20 +267,16 @@ color: black;
 
 <div class="libraryLogo"><img src="https://github.com/mckinneylibrary/images/blob/master/logos/LibraryLogo_InvertedWhite.png?raw=true"></div>
 
-<!--Background Animation-->
 <div class="bg"></div>
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 
 
-<!--Libcal Schedule Container-->
 <div class="libcalModule">
-		<div class="libcalwrapper" id="libcalContainer">
-            <!-- The JavaScript below will inject the security-bypassing iframe right here -->
-	</div>
+	<div class="libcalwrapper" id="libcalContainer">
+            </div>
 </div>
 
-<!--Ads for Programs-->
 <div class="container">
 <div class="row">    
 		<div class="selfcheck-slideshow">
@@ -300,7 +291,6 @@ color: black;
 </div>
 </div> 
 
-<!--Clock-->
 <div class="time">
         <span class="hms"></span>
         <span class="ampm"></span>
@@ -387,6 +377,5 @@ setInterval(function() {
 
   </script>  
 
-  
 </body>
 </html>
